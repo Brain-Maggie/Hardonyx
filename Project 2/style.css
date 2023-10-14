@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: block;
+  background-image: radial-gradient(yellow, orange);
+}
+
+section {
+  position: sticky;
+  top: 0;
+}
+
+header {
+  background-color: rgb(205, 106, 34);
+  text-align: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+nav {
+  background-color: rgb(252, 200, 164);
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  padding: 12px;
+  border-bottom: 1px solid black;
+}
+
+.team {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding-top: 1rem;
+  margin: 1.5rem;
+  flex-direction: column;
+  height: 30rem;
+  background-image: radial-gradient(rgb(255, 255, 141), rgb(235, 147, 85));
+  scroll-margin-top: 7.8rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+h1 {
+  color: rgb(58, 194, 119);
+  text-shadow: 2px solid black;
+  font-size: 2rem;
+}
+
+h2 {
+  max-width: 100%;
+}
+
+main {
+  margin-top: 20px;
+}
+
+h2 {
+  color: rgb(46, 123, 97);
+  padding: 25px;
+  font-size: 40px;
+}
+
+figcaption {
+  color: rgb(16, 88, 64);
+  font-size: 18px;
+}
+
+nav a,
+nav a:visited {
+  color: blue;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: goldenrod;
+}
+
+footer {
+  background-color: rgb(193, 107, 45);
+  color: rgb(58, 194, 119);
+  position: sticky;
+  bottom: 0;
+  padding: 10px;
+}
+
+/* ||SMALL SCREEN */
+@media screen and (max-width: 375px) {
+  body {
+    background-color: rgb(87, 127, 27);
+  }
+}
+
+@media screen and (min-width: 667px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  nav {
+    display: none;
+  }
+
+  main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: -65px;
+  }
+
+  img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .team {
+    margin: 2px;
+    height: 18rem;
+    min-width: 12rem;
+  }
+
+  h2 {
+    padding: 10px;
+    font-size: 25px;
+  }
+
+  figcaption {
+    margin-top: auto;
+    text-wrap: wrap;
+    font-size: 13px;
+    padding: 4px;
+  }
+
+  footer {
+    margin-top: 5rem;
+  }
+}
+
+/* || LARGE SCREEN */
+@media screen and (min-width: 1024px) {
+  main {
+    flex-flow: row;
+    padding: 2.5rem;
+  }
+
+  img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .team {
+    justify-content: space-evenly;
+    width: 20rem;
+    height: 30rem;
+  }
+
+  h2 {
+    padding: 15px;
+    font-size: 2.5rem;
+  }
+
+  figcaption {
+    font-size: 1.5rem;
+  }
+}
+/* || XL*/
+@media screen and (min-width: 1440px) {
+  main {
+    background-color: rgba(201, 94, 94, 0.652);
+    padding: 200px;
+  }
+}
